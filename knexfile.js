@@ -39,7 +39,7 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
+      database: 'finances',
       user:     'username',
       password: 'password'
     },
@@ -48,7 +48,8 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations',
+      directory: './src/database/migrations'
     }
   }
 
